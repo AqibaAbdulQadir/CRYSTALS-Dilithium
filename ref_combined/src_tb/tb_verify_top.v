@@ -136,34 +136,34 @@ module tb_verify_top;
   
     initial begin
         // KAT Inputs
-        $readmemh("SigVer_message_44.txt", message_2);
-        $readmemh("SigVer_message_65.txt", message_3);
-        $readmemh("SigVer_message_87.txt", message_5);
+        $readmemh("SigVer_message_44.mem", message_2);
+        $readmemh("SigVer_message_65.mem", message_3);
+        $readmemh("SigVer_message_87.mem", message_5);
         
-        $readmemh("SigVer_mlen_44.txt", mlen_2);
-        $readmemh("SigVer_mlen_65.txt", mlen_3);
-        $readmemh("SigVer_mlen_87.txt", mlen_5);
+        $readmemh("SigVer_mlen_44.mem", mlen_2);
+        $readmemh("SigVer_mlen_65.mem", mlen_3);
+        $readmemh("SigVer_mlen_87.mem", mlen_5);
         
-        $readmemh("SigVer_pk_44.txt", pk_2);
-        $readmemh("SigVer_pk_65.txt", pk_3);
-        $readmemh("SigVer_pk_87.txt", pk_5);
+        $readmemh("SigVer_pk_44.mem", pk_2);
+        $readmemh("SigVer_pk_65.mem", pk_3);
+        $readmemh("SigVer_pk_87.mem", pk_5);
         
-        $readmemh("SigVer_ctx_44.txt", context_2);
-        $readmemh("SigVer_ctx_65.txt", context_3);
-        $readmemh("SigVer_ctx_87.txt", context_5);
+        $readmemh("SigVer_ctx_44.mem", context_2);
+        $readmemh("SigVer_ctx_65.mem", context_3);
+        $readmemh("SigVer_ctx_87.mem", context_5);
         
-        $readmemh("SigVer_ctxlen_44.txt", ctxlen_2);
-        $readmemh("SigVer_ctxlen_65.txt", ctxlen_3);
-        $readmemh("SigVer_ctxlen_87.txt", ctxlen_5);
+        $readmemh("SigVer_ctxlen_44.mem", ctxlen_2);
+        $readmemh("SigVer_ctxlen_65.mem", ctxlen_3);
+        $readmemh("SigVer_ctxlen_87.mem", ctxlen_5);
         
-        $readmemh("SigVer_signature_44.txt", sig_2);
-        $readmemh("SigVer_signature_65.txt", sig_3);
-        $readmemh("SigVer_signature_87.txt", sig_5);
+        $readmemh("SigVer_signature_44.mem", sig_2);
+        $readmemh("SigVer_signature_65.mem", sig_3);
+        $readmemh("SigVer_signature_87.mem", sig_5);
         
         // KAT Outputs
-        $readmemb("SigVer_result_44.txt", verif_2);
-        $readmemb("SigVer_result_65.txt", verif_3);
-        $readmemb("SigVer_result_87.txt", verif_5);
+        $readmemb("SigVer_result_44.mem", verif_2);
+        $readmemb("SigVer_result_65.mem", verif_3);
+        $readmemb("SigVer_result_87.mem", verif_5);
         
         valid_i = 0;
         ready_o = 0;

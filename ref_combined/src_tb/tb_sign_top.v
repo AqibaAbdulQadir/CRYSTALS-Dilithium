@@ -141,30 +141,30 @@ module tb_sign_top;
     
     initial begin
         // KAT Inputs 
-        $readmemh("SigGen_message_44.txt", message_2);
-        $readmemh("SigGen_message_65.txt", message_3);
-        $readmemh("SigGen_message_87.txt", message_5);
+        $readmemh("SigGen_message_44.mem", message_2);
+        $readmemh("SigGen_message_65.mem", message_3);
+        $readmemh("SigGen_message_87.mem", message_5);
         
-        $readmemh("SigGen_mlen_44.txt", mlen_2);
-        $readmemh("SigGen_mlen_65.txt", mlen_3);
-        $readmemh("SigGen_mlen_87.txt", mlen_5);
+        $readmemh("SigGen_mlen_44.mem", mlen_2);
+        $readmemh("SigGen_mlen_65.mem", mlen_3);
+        $readmemh("SigGen_mlen_87.mem", mlen_5);
         
-        $readmemh("SigGen_sk_44.txt", sk_2);
-        $readmemh("SigGen_sk_65.txt", sk_3);
-        $readmemh("SigGen_sk_87.txt", sk_5);
+        $readmemh("SigGen_sk_44.mem", sk_2);
+        $readmemh("SigGen_sk_65.mem", sk_3);
+        $readmemh("SigGen_sk_87.mem", sk_5);
         
-        $readmemh("SigGen_ctx_44.txt", context_2);
-        $readmemh("SigGen_ctx_65.txt", context_3);
-        $readmemh("SigGen_ctx_87.txt", context_5);
+        $readmemh("SigGen_ctx_44.mem", context_2);
+        $readmemh("SigGen_ctx_65.mem", context_3);
+        $readmemh("SigGen_ctx_87.mem", context_5);
         
-        $readmemh("SigGen_ctxlen_44.txt", ctxlen_2);
-        $readmemh("SigGen_ctxlen_65.txt", ctxlen_3);
-        $readmemh("SigGen_ctxlen_87.txt", ctxlen_5);
+        $readmemh("SigGen_ctxlen_44.mem", ctxlen_2);
+        $readmemh("SigGen_ctxlen_65.mem", ctxlen_3);
+        $readmemh("SigGen_ctxlen_87.mem", ctxlen_5);
         
         // KAT Outputs
-        $readmemh("SigGen_signature_44.txt", sig_2);
-        $readmemh("SigGen_signature_65.txt", sig_3);
-        $readmemh("SigGen_signature_87.txt", sig_5);
+        $readmemh("SigGen_signature_44.mem", sig_2);
+        $readmemh("SigGen_signature_65.mem", sig_3);
+        $readmemh("SigGen_signature_87.mem", sig_5);
         
         valid_i = 0;
         ready_o = 0;

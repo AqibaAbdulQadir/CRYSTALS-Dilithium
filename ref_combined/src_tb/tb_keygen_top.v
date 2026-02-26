@@ -121,18 +121,18 @@ module tb_keygen_top;
   
     initial begin
         // KAT Inputs
-        $readmemh("KeyGen_seed_44.txt",  seed_2);
-        $readmemh("KeyGen_seed_65.txt",  seed_3);
-        $readmemh("KeyGen_seed_87.txt",  seed_5);
+        $readmemh("KeyGen_seed_44.mem",  seed_2);
+        $readmemh("KeyGen_seed_65.mem",  seed_3);
+        $readmemh("KeyGen_seed_87.mem",  seed_5);
         
         // KAT Outputs
-        $readmemh("KeyGen_pk_44.txt", pk_2);
-        $readmemh("KeyGen_pk_65.txt", pk_3);
-        $readmemh("KeyGen_pk_87.txt", pk_5);
+        $readmemh("KeyGen_pk_44.mem", pk_2);
+        $readmemh("KeyGen_pk_65.mem", pk_3);
+        $readmemh("KeyGen_pk_87.mem", pk_5);
         
-        $readmemh("KeyGen_sk_44.txt", sk_2);
-        $readmemh("KeyGen_sk_65.txt", sk_3);
-        $readmemh("KeyGen_sk_87.txt", sk_5);
+        $readmemh("KeyGen_sk_44.mem", sk_2);
+        $readmemh("KeyGen_sk_65.mem", sk_3);
+        $readmemh("KeyGen_sk_87.mem", sk_5);
         
         valid_i = 0;
         ready_o = 0;
